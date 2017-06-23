@@ -1,3 +1,7 @@
+## Deprecation Warning
+__This repository will be deleted on November 30, 2017__
+If you have any concerns or questions please leave an issue in this repository.
+
 ![Banner](https://raw.githubusercontent.com/MatthewYork/Resources/master/DateTools/DateToolsHeader.png)
 
 ## DateTools
@@ -72,7 +76,7 @@ The following bundle is necessary if you would like to support internationalizat
   * [Initialization](#initialization)
   * [Time Period Info](#time-period-info)
   * [Manipulation](#manipulation)
-  * [Relationships](#relationships) 
+  * [Relationships](#relationships)
 * [**Time Period Groups**](#time-period-groups)
   * [Time Period Collections](#time-period-collections)
   * [Time Period Chains](#time-period-chains)
@@ -98,7 +102,7 @@ NSLog(@"Time Ago: %@", timeAgoDate.shortTimeAgoSinceNow);
 //Time Ago: 4s
 ```
 
-Assuming you have added the localization to your project, `DateTools` currently supports the following languages: 
+Assuming you have added the localization to your project, `DateTools` currently supports the following languages:
 
 - ar (Arabic)
 - bg (Bulgarian)
@@ -147,7 +151,7 @@ Thanks to Kevin Lawler for his work on [NSDate+TimeAgo](https://github.com/kevin
 
 ####Date Components
 
-There is a lot of boilerplate associated with getting date components from an NSDate. You have to set up a calendar, use the desired flags for the components you want, and finally extract them out of the calendar. 
+There is a lot of boilerplate associated with getting date components from an NSDate. You have to set up a calendar, use the desired flags for the components you want, and finally extract them out of the calendar.
 
 With DateTools, this:
 
@@ -267,7 +271,7 @@ A host of methods have been extended to give information about an instance of DT
 
 ####Manipulation
 
-Time periods may also be manipulated. They may be shifted earlier or later as well as expanded and contracted. 
+Time periods may also be manipulated. They may be shifted earlier or later as well as expanded and contracted.
 
 **Shifting**
 
@@ -305,7 +309,7 @@ You can also check for the official relationship (like those shown in the chart)
 ```objc
 -(DTTimePeriodRelation)relationToPeriod:(DTTimePeriod *)period;
 ```
-All of the possible relationships have been enumerated in the DTTimePeriodRelation enum. 
+All of the possible relationships have been enumerated in the DTTimePeriodRelation enum.
 
 **For a better grasp on how time periods relate to one another, check out the "Time Periods" tab in the example application. Here you can slide a few time periods around and watch their relationships change.**
 
@@ -318,7 +322,7 @@ Time period groups are the final abstraction of date and time in DateTools. Here
 Both collections and chains operate like an NSArray. You may add,insert and remove DTTimePeriod objects from them just as you would objects in an array. The difference is how these periods are handled under the hood.
 
 ###Time Period Collections
-Time period collections serve as loose sets of time periods. They are unorganized unless you decide to sort them, and have their own characteristics like a StartDate and EndDate that are extrapolated from the time periods within. Time period collections allow overlaps within their set of time periods. 
+Time period collections serve as loose sets of time periods. They are unorganized unless you decide to sort them, and have their own characteristics like a StartDate and EndDate that are extrapolated from the time periods within. Time period collections allow overlaps within their set of time periods.
 
 ![TimePeriodCollections](https://raw.githubusercontent.com/MatthewYork/Resources/master/DateTools/TimePeriodCollection.png)
 
